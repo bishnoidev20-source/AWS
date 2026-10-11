@@ -1,106 +1,174 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Devdhar Bishnoi | Portfolio</title>
-    <!-- CSS File Link -->
-    <link rel="stylesheet" href="Assignment/portfolio.css">
-    <!-- Google Fonts Link for beautiful typography -->
-    
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="index.css">
 </head>
-
 <body>
-    <!-- Header Section -->
-    <header class="header">
-        <div class="header-content">
-            <h1>Devdhar Bishnoi</h1>
-            <p class="subtitle">~ Web Developer ~</p>
-        </div>
+
+    <!-- Header -->
+    <header>
+        <h1>My Portfolio</h1>
+        <p>B.Tech Student | Aspiring Web Developer</p>
     </header>
 
-    <!-- Main Content Container -->
-    <main class="container">
-        
-        <!-- Profile Picture Section -->
-        <section class="profile-section">
-            <figure class="profile-figure">
-                <img src="Assignment/PFP 1.jpeg" alt="Devdhar Bishnoi" class="profile-img">
-                <figcaption>Devdhar Bishnoi</figcaption>
-            </figure>
-        </section>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-        <!-- About & Education Section -->
-        <section class="card">
-            <h2>About Me</h2>
-            <p>I am learning web development and building websites using HTML, CSS, and JavaScript.</p>
-            
-            <h3 class="section-subheading">My Education</h3>
-            <p title="Tooltip">Pursuing B.Tech in CSEAI</p>
-        </section>
+    <!-- Home Section -->
+    <section id="home" class="intro">
 
-        <!-- Skills & Goal Section -->
-        <section class="card flex-section">
-            <div class="skills-list">
-                <h3 class="section-subheading">My Skills</h3>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ul>
-            </div>
+        <div class="intro-text">
+            <p class="welcome">WELCOME TO MY PORTFOLIO</p>
 
-            <div class="goal-box">
-                <h3 class="section-subheading">My Goal</h3>
-                <p>My goal is to become a successful Web Developer and build amazing websites.</p>
-            </div>
-        </section>
+            <h2>Hello, I'm Devdhar Bishnoi</h2>
+            <h3>B.Tech First Year Student</h3>
 
-        <!-- Table Section -->
-        <section class="card">
-            <h2>Skills Proficiency</h2>
-            <table class="skills-table">
-                <thead>
-                    <tr>
-                        <th>Skill</th>
-                        <th>Proficiency</th>
-                        <th>Experience</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>HTML</td>
-                        <td>Intermediate</td>
-                        <td>6 months</td>
-                    </tr>
-                    <tr>
-                        <td>CSS</td>
-                        <td>Intermediate</td>
-                        <td>6 months</td>
-                    </tr>
-                    <tr>
-                        <td>JavaScript</td>
-                        <td>Beginner</td>
-                        <td>3 months</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+            <p>
+                I am a first-year engineering student interested
+                in programming and web development. I enjoy
+                creating websites and learning new technologies.
+            </p>
 
-        <!-- Projects Section -->
-        <section class="card">
-            <h2>My Projects</h2>
+            <a href="#projects" class="btn">View My Projects</a>
+            <a href="#contact" class="btn btn-light">Contact Me</a>
+        </div>
+
+        <!-- Profile Photo -->
+        <div class="profile">
+            <img src="/Assignment/PFP 1.jpeg" alt="My Profile Photo">
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+
+        <p>
+            Hello! I am a B.Tech first-year student interested
+            in technology and software development. I am currently
+            learning HTML, CSS and C programming. I enjoy building
+            small projects to improve my skills and gain practical
+            experience.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">C Programming</div>
+            <div class="skill">Problem Solving</div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <p class="subtitle">
+            Here are some websites I have created while learning
+            web development.
+        </p>
+
+        <div class="project-container">
+
+            <!-- Restaurant Website -->
             <div class="project-card">
-                <h3>Project 1: Portfolio Website</h3>
-                <p>This is my personal portfolio website where I showcase my skills, projects, and achievements. It is built using HTML, CSS, and JavaScript.</p>
-            </div>
-        </section>
+                <h3>01. Restaurant Website</h3>
 
-    </main>
+                <p>
+                    A restaurant website designed to display the
+                    menu, food items and basic restaurant details.
+                </p>
+
+                <span>HTML | CSS</span>
+
+                <br><br>
+
+                <a href="/Assignment/resty.html"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="project-btn">
+                    View Project
+                </a>
+            </div>
+
+            <!-- Login Page -->
+            <div class="project-card">
+                <h3>02. Login Page</h3>
+
+                <p>
+                    A simple login page with input fields for
+                    username or email and password.
+                </p>
+
+                <span>HTML | CSS</span>
+
+                <br><br>
+
+                <a href="/Assignment/login.html"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="project-btn">
+                    View Project
+                </a>
+            </div>
+
+            <!-- Registration Page -->
+            <div class="project-card">
+                <h3>03. Registration Page</h3>
+
+                <p>
+                    A registration page where users can enter
+                    their personal details through a simple form.
+                </p>
+
+                <span>HTML | CSS</span>
+
+                <br><br>
+
+                <a href="/Assignment/registration.html"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="project-btn">
+                    View Project
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <p>
+            Feel free to contact me for learning and project
+            discussions.
+        </p>
+
+        <p><b>Email:</b> bishnoidev20@example.com</p>
+        <p><b>College:</b> KIET DEEEMED TO BE UNIVERSITY</p>
+    </section>
 
     <!-- Footer -->
     <footer>
-        <p>2026 Devdhar Bishnoi. All Rights Reserved.</p>
+        <p>© 2026 Devdhar Bishnoi </p>
     </footer>
+
 </body>
 </html>

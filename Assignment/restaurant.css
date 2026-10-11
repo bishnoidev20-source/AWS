@@ -1,0 +1,369 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffaf3;
+    color: #3e2723;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #2d1e19;
+    color: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 27px;
+}
+
+header h1 span {
+    color: #d6a66b;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 22px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #d6a66b;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 520px;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(35, 23, 19, 0.88),
+            rgba(35, 23, 19, 0.25)
+        ),
+        url("https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 60px 8%;
+    color: white;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.tagline,
+.small-heading {
+    color: #b77a43;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.hero .tagline {
+    color: #f1c995;
+}
+
+.hero h2 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content > p:not(.tagline) {
+    font-size: 17px;
+    margin-bottom: 25px;
+    max-width: 450px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #b77a43;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #8c552b;
+}
+
+/* Welcome Section */
+.welcome {
+    text-align: center;
+    padding: 65px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.welcome h2,
+.menu h2,
+.reservation h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.welcome > p:last-child {
+    color: #75645d;
+}
+
+/* Menu Section */
+.menu {
+    padding: 60px 7%;
+    text-align: center;
+    background-color: #f3e8dc;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.menu-card {
+    width: 300px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(45, 30, 25, 0.1);
+    transition: transform 0.3s;
+}
+
+.menu-card:hover {
+    transform: translateY(-6px);
+}
+
+.menu-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.card-content p {
+    color: #75645d;
+    font-size: 14px;
+    min-height: 45px;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.price-row span {
+    font-size: 21px;
+    font-weight: bold;
+    color: #a66332;
+}
+
+.price-row a {
+    color: #8c552b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.price-row a:hover {
+    text-decoration: underline;
+}
+
+/* Special Offer */
+.offer {
+    padding: 70px 20px;
+    text-align: center;
+    background-color: #3e2723;
+    color: white;
+}
+
+.offer > div {
+    max-width: 700px;
+    margin: auto;
+}
+
+.offer h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.offer .small-heading {
+    color: #e3b783;
+}
+
+.offer h3 {
+    font-size: 26px;
+    color: #e3b783;
+    margin-top: 20px;
+}
+
+.offer p:not(.small-heading) {
+    color: #eee0d6;
+}
+
+/* Reservation Section */
+.reservation {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.reservation > p:not(.small-heading) {
+    color: #75645d;
+    margin-bottom: 25px;
+}
+
+form {
+    max-width: 450px;
+    margin: 25px auto 0;
+    padding: 30px;
+    background-color: white;
+    text-align: left;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(45, 30, 25, 0.1);
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin: 15px 0 6px;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d5c4b7;
+    border-radius: 4px;
+    font-size: 15px;
+    background-color: white;
+}
+
+form input:focus,
+form select:focus {
+    outline: none;
+    border-color: #b77a43;
+}
+
+form button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 22px;
+    background-color: #8c552b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #633a20;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 35px 20px;
+    background-color: #2d1e19;
+    color: white;
+}
+
+footer h2 {
+    color: #e3b783;
+    margin-bottom: 8px;
+}
+
+footer .copyright {
+    margin: 18px 0;
+    font-size: 13px;
+    color: #d4c3b9;
+}
+
+footer a {
+    color: #e3b783;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0 5px;
+    }
+
+    .hero {
+        min-height: 430px;
+        padding: 40px 25px;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+    }
+
+    .welcome h2,
+    .menu h2,
+    .reservation h2 {
+        font-size: 28px;
+    }
+
+    .menu-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .offer h2 {
+        font-size: 28px;
+    }
+
+    form {
+        padding: 22px;
+    }
+}

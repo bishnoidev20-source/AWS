@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew & Bite Café</title>
+    <link rel="stylesheet" href="restaurant.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <h1>Brew <span>& Bite</span></h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Our Menu</a>
+            <a href="#offers">Offers</a>
+            <a href="#reservation">Reservation</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="tagline">YOUR DAILY DOSE OF HAPPINESS</p>
+            <h2>Good Coffee.<br>Good Food. Good Mood.</h2>
+            <p>
+                Freshly brewed coffee and delicious bites,
+                made to brighten your day.
+            </p>
+            <a href="#menu" class="btn">Explore Our Menu</a>
+        </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="welcome">
+        <p class="small-heading">WELCOME TO BREW & BITE</p>
+        <h2>A Little Cup of Comfort</h2>
+        <p>
+            From your morning coffee to your evening dessert,
+            we make every visit special with fresh ingredients,
+            cosy vibes and flavours you'll love.
+        </p>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <p class="small-heading">MADE FRESH FOR YOU</p>
+        <h2>Our Favourites</h2>
+
+        <div class="menu-container">
+
+            <div class="menu-card">
+                <img
+                    src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=600&q=80"
+                    alt="Freshly brewed coffee"
+                >
+                <div class="card-content">
+                    <h3>Classic Cappuccino</h3>
+                    <p>Rich espresso topped with creamy milk foam.</p>
+                    <div class="price-row">
+                        <span>₹129</span>
+                        <a href="#reservation">Try It</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img
+                    src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80"
+                    alt="Chocolate cake"
+                >
+                <div class="card-content">
+                    <h3>Chocolate Cake</h3>
+                    <p>Soft chocolate cake for your sweet cravings.</p>
+                    <div class="price-row">
+                        <span>₹179</span>
+                        <a href="#reservation">Try It</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img
+                    src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=600&q=80"
+                    alt="Fresh sandwich"
+                >
+                <div class="card-content">
+                    <h3>Grilled Sandwich</h3>
+                    <p>A crispy sandwich packed with tasty fillings.</p>
+                    <div class="price-row">
+                        <span>₹149</span>
+                        <a href="#reservation">Try It</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Special Offer -->
+    <section id="offers" class="offer">
+        <div>
+            <p class="small-heading">A LITTLE SOMETHING EXTRA</p>
+            <h2>Your Coffee Break Just Got Better!</h2>
+            <p>
+                Enjoy a cappuccino and a slice of chocolate cake
+                together for a special combo price.
+            </p>
+            <h3>Combo Deal: ₹249</h3>
+            <a href="#reservation" class="btn">Book Your Visit</a>
+        </div>
+    </section>
+
+    <!-- Reservation Form -->
+    <section id="reservation" class="reservation">
+        <p class="small-heading">WE'LL SAVE YOU A SEAT</p>
+        <h2>Reserve a Table</h2>
+        <p>Planning a coffee date? Let us know when you're coming.</p>
+
+        <form action="#" method="post">
+            <label for="name">Your Name</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+            >
+
+            <label for="email">Email Address</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <label for="date">Reservation Date</label>
+            <input
+                type="date"
+                id="date"
+                name="date"
+                required
+            >
+
+            <label for="guests">Number of Guests</label>
+            <select id="guests" name="guests" required>
+                <option value="">Choose guests</option>
+                <option value="1">1 Person</option>
+                <option value="2">2 People</option>
+                <option value="3">3 People</option>
+                <option value="4">4 People</option>
+                <option value="5">5 or More</option>
+            </select>
+
+            <button type="submit">Request Reservation</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2>Brew & Bite Café</h2>
+        <p>Good coffee, great company.</p>
+        <p>Contact: hello@brewandbite.example</p>
+        <p class="copyright">
+            &copy; 2026 Brew & Bite Café. All rights reserved.
+        </p>
+        <a href="index.html">Back to My Portfolio</a>
+    </footer>
+
+</body>
+</html>
+
